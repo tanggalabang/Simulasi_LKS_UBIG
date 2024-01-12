@@ -1,0 +1,46 @@
+        .toggle {
+            background-color: blue;
+            width: 100px;
+            height: 50px;
+            border-radius: 50px;
+
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hh {
+            display: flex;
+            gap: 10px;
+        }
+
+        .toggle .round {
+            background-color: lightblue;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            margin-right: -35px;
+        }
+
+        .toggle .round2 {
+            background-color: lightblue;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: none;
+            margin-left: -35px;
+        }
+
+        .toggle:active {
+            background-color: red;
+
+        }
+
+        .toggle:active .round {
+            display: none;
+        }
+
+        .toggle:active .round2 {
+            margin-left: -35px;
+            display: block;
+        }
